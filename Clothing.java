@@ -1,47 +1,50 @@
-public class Book {
-    private String title;
-    private String author;
-    private int year;
-    private String genre;
+public class Clothing {
+    // Private attributes of the Clothing class
+    private String brand;
+    private double cost;
+    private String type;    // Examples: "Outwear", "Pants", "Shirt", etc.
+    private String fabric;  // Examples: "Cotton", "Alpaca", "Wool", etc.
 
-    // Constructor to initialize the attributes
-    public Book(String title, String author, int year, String genre) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
-        this.genre = genre;
+    // Creating the Clothing object
+    public Clothing(String brand, double cost, String type, String fabric) {
+        this.brand = brand;
+        this.cost = cost;
+        this.type = type;
+        this.fabric = fabric;
     }
 
-    // Getters and setters for each attribute
-    public String getTitle() {
-        return title;
+    // Getter methods (gathering information)
+    public String getBrand() {
+        return brand;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public double getCost() {
+        return cost;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getType() {
+        return type;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public String getFabric() {
+        return fabric;
     }
 
-    public int getYear() {
-        return year;
+    // Setter methods (inserting information)
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
-    public String getGenre() {
-        return genre;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setFabric(String fabric) {
+        this.fabric = fabric;
     }
+
 }
